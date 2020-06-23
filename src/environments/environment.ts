@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyCuRK_n2o2_IeyGdIcp8obb2-E9d54eais',
+    authDomain: 'nuhhule.firebaseapp.com',
+    databaseURL: 'https://nuhhule.firebaseio.com',
+    projectId: 'nuhhule',
+    storageBucket: 'nuhhule.appspot.com',
+    messagingSenderId: '670235845524',
+    appId: '1:670235845524:web:0178c104d45957855c6581',
+    measurementId: 'G-WDRY6EKPLQ',
+  },
 };
 
 /*

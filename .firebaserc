@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "nuhhule": {
+      "hosting": {
+        "nahhule": [
+          "nuhhule"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "nuhhule"
+  }
+}
