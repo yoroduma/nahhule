@@ -1,4 +1,14 @@
 <app-header></app-header>
+<mat-sidenav-container>
+  <mat-sidenav
+    fixedInViewport
+    [fixedTopGap]="(isMobile$ | async) ? 97 : 57"
+    [mode]="(isMobile$ | async) ? 'over' : 'side'"
+    [opened]="isOpened$ | async"
+    >
+    <app-drawer></app-drawer>
+  </mat-sidenav>
+  <mat-sidenav-content>
 <router-outlet>
   <p>router-outlet部分</p>
 </router-outlet>

@@ -12,13 +12,14 @@ import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
+import { DrawerComponent } from './drawer/drawer.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatMenuModule } from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 
 
@@ -26,6 +27,7 @@ import { MatDividerModule } from '@angular/material/divider';
   declarations: [
     AppComponent,
     HeaderComponent,
+    DrawerComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,13 +45,14 @@ import { MatDividerModule } from '@angular/material/divider';
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
-
+    MatSidenavModule,
   ],
   providers: [
     {
-      provide: ServiceWorkerRegistration, useValue: 'asia-northeast1'
-    }
+      provide: ServiceWorkerRegistration,
+      useValue: 'asia-northeast1',
+    },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
