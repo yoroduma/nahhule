@@ -11,10 +11,21 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
+import { HeaderComponent } from './header/header.component';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatMenuModule } from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +36,14 @@ import { environment } from '../environments/environment';
     AngularFireFunctionsModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatSnackBarModule,
+    MatMenuModule,
+    MatIconModule,
+    MatDividerModule,
+
   ],
   providers: [
     {
